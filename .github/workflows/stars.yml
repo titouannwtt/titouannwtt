@@ -1,0 +1,26 @@
+# shields.io's github/stars endpoint can fail ("invalid"): the counts are written as static badges instead.
+name: Refresh star badges
+on:
+  schedule:
+    - cron: '17 5 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  stars:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Write the current star counts into the README
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for repo in freqtrade-ultimate frequi-ultimate; do
+            n=$(gh api "repos/titouannwtt/$repo" --jq .stargazers_count)
+            sed -i -E "s#(titouannwtt/$repo\) !\[stars\]\(https://img\.shields\.io/badge/%E2%98%85-)[0-9]+#\1$n#" README.md
+          done
+          git diff --quiet && exit 0
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -am 'chore: refresh star counts'
+          git push
