@@ -13,15 +13,19 @@ music app I founded, an open-source trading stack, and the AI tooling that helps
 
 ## Founder of Jam Jam
 
-[**Jam Jam**](https://jam-jam.org) finds the chords of any song with AI that runs on the device, keeps them in
-an editable songbook, then helps you tune and play. Free on the web and on Android, iOS in public beta.
+[**Jam Jam**](https://jam-jam.org) is a free chord, key and tempo detector with an editable songbook. Drop an audio
+file or play into the mic: on the web, detection is free and unlimited in your browser, with no account. It also comes
+as an Android app and an iOS public beta.
+[Try the detector](https://jam-jam.org/app/detection) · [Overview](https://github.com/titouannwtt/jam-jam) ·
+[Android](https://play.google.com/store/apps/details?id=com.jamjam) · [iOS beta](https://testflight.apple.com/join/fx95DYFE)
 
 - **On-device AI**: chord recognition, beat tracking and stem separation, exported to ONNX and run in the app.
 - **Built end to end**: React Native app (Expo, Kotlin native modules), Astro website, Supabase
   backend, Python audio service, public REST API.
-- Open parts: [`jam-jam-api-examples`](https://github.com/titouannwtt/jam-jam-api-examples) (API guide and
-  examples) and [`jam-jam-assets`](https://github.com/titouannwtt/jam-jam-assets) (versioned models and sounds,
-  with checksums and licenses).
+- Open parts: [`jam-jam`](https://github.com/titouannwtt/jam-jam) (how the detector works, and where to try it),
+  [`jam-jam-assets`](https://github.com/titouannwtt/jam-jam-assets) (versioned models and sounds, with checksums
+  and licenses) and [`jam-jam-api-examples`](https://github.com/titouannwtt/jam-jam-api-examples) (API guide and
+  examples).
 
 ## Trading systems
 
