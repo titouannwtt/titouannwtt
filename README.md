@@ -31,7 +31,7 @@ as an Android app and an iOS public beta.
 
 | Project | What it is |
 |---|---|
-| [**freqtrade-ultimate**](https://github.com/titouannwtt/freqtrade-ultimate) ![stars](https://img.shields.io/badge/%E2%98%85-26-3FB950?style=flat) | Production fork of Freqtrade for Hyperliquid. Shared data cache across bots (75 % fewer API calls, measured live with four bots), walk-forward and CPCV validation, liquidation detection. |
+| [**freqtrade-ultimate**](https://github.com/titouannwtt/freqtrade-ultimate) ![stars](https://img.shields.io/badge/%E2%98%85-25-3FB950?style=flat) | Production fork of Freqtrade for Hyperliquid. Shared data cache across bots (75 % fewer API calls, measured live with four bots), walk-forward and CPCV validation, liquidation detection. |
 | [**frequi-ultimate**](https://github.com/titouannwtt/frequi-ultimate) ![stars](https://img.shields.io/badge/%E2%98%85-10-3FB950?style=flat) | Multi-bot dashboard for Freqtrade: fleet comparison, risk overview, strategy tooling. Vue 3, Pinia, ECharts. |
 
 Both are maintained with the **Freqtrade France** community.
